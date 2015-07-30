@@ -17,7 +17,7 @@ class Storage():
     self.db = MySQLdb.connect(      
       user = os.getenv('MYSQL_USERNAME', 'root'),
       passwd = os.getenv('MYSQL_PASSWORD', ''),
-      db = os.getenv('MYSQL_INSTANCE_NAME', 'daocloud'),
+      db = os.getenv('MYSQL_INSTANCE_NAME', 'test'),
       host = os.getenv('MYSQL_PORT_3306_TCP_ADDR', 'localhost'),
       port = int(os.getenv('MYSQL_PORT_3306_TCP_PORT', '3306'))
       )
